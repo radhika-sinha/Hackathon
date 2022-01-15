@@ -38,6 +38,4 @@ class Host():
     def hostDeleteEvent(self, eventInstance):
         self.events.remove(eventInstance)
     
-            
-        
-        
+    

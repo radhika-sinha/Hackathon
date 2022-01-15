@@ -10,14 +10,19 @@ class Event():
         self._state = state
         self._numVaxRequired = numVaxRequired
         self._recentTestRequired = recentTestRequired
-    
+        self._guests = {}
     #getters and setters
     
     @property
     def eventHostName(self):
         return self._hostName
     
+    #
+    @property
+    def eventGuests(self):
+        return self._guests
     
-        
-        
-        
+    def deleteGuest(self, guestInstance): 
+        self._guests.remove(guestInstance)
+    
+    
